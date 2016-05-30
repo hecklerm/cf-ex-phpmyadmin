@@ -4,7 +4,8 @@ applications:
   memory: 128M 
   instances: 1
   host: phpmyadmin-${random-word}
+  domain: cfapps.pez.pivotal.io
   path: .
   buildpack: https://github.com/cloudfoundry/php-buildpack.git#8c13f5434b2f31ca960d2bca9153df1978258535
   services:
-  - quotesdb
+  - heckler
